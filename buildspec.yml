@@ -25,4 +25,4 @@ phases:
       - printf '[{"name":"ci-cd-sample-app","imageUri":"%S"}]' $REPOSITORY_URI:$IMAGE_TAG > imagedefinitions.json
       - cat imagedefinitions.json
 artifact:
-  imagedefinitions.json
+  imagedefinitions.json 
