@@ -5,7 +5,7 @@ phases:
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - pip install --upgrade awscli==1.18.17
+      - pipe install --upgrade awscli==1.18.17
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - REPOSITORY_URI=211884459079.dkr.ecr.us-east-2.amazonaws.com/ci-cd-sample-repository
